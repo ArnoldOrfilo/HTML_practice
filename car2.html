@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Created by Wenyi Chen,student number:P349400-->
+
+
+
+<head>
+    <title>Wenyi Chen |  Mercedes</title>
+    <meta charset="Utf-8">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<style>
+
+    body{
+        
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        line-height:auto;
+        background-image: url('files/IMG_2730.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    
+
+    hr{
+        background-color:rgb(104, 103, 103); width:980px; height:0.3px; margin-left: auto;margin-right: auto;margin-top: auto;
+    }
+    .animated {
+        animation-duration: 2s;
+        animation-name: fadeIn;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    .navDiv{
+      position: fixed;
+      z-index: 9999;
+      width: 280px;
+      height:50px;
+      background-color: darkgray;
+      color: white;
+      box-shadow: 2px 5px 15px black;
+      opacity: 0.5;
+      transition: opacity 0.5s;
+      border-radius: 10px;
+    }
+
+    .navDiv:hover{
+      opacity:1;
+    }
+
+    nav{
+      line-height: 20px;
+    }
+    
+    nav ul{
+      list-style: none;
+      
+    }
+
+    .navli{
+      width:105px;
+      float:left;
+      text-align: center;
+    }
+   
+
+</style>
+
+<body class="animated">
+    <div style="width:980px;margin-left:auto;margin-right:auto;font-weight: lighter;">
+        
+            
+        <div style="float:left; width:980px; margin-left: 0; margin-right: auto;margin-top: auto; ">
+            <a href="main.html"><img src="files/smileyFace.png" atl="smiley face" style="width:125px; height:125px"></a>
+        </div>
+
+        <div class="navDiv" style= "float:left auto;margin-top: 40px; margin-left: 348px; ">
+      
+          <nav>
+            <ul>
+              <a href="cars.html"><li class="navli"><h6 > CARS</h6> </li></a>
+              
+              <a href="movie.html"><li class="navli"><h6> MOVIES</h6> </li></a>
+            </ul>
+          </nav>
+
+        </div>
+            
+       
+
+
+     
+
+        <hr>
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel" >
+
+           
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+             
+              
+            </div>
+            
+            
+            <div class="carousel-inner">
+  
+              <div class="carousel-item active">
+                <img src="posters/car2_2.jpg"  class="d-block w-100">
+  
+              </div>
+  
+  
+              <div class="carousel-item">
+                <img src="posters/car2_3.jpg" class="d-block w-100">
+              </div>
+
+              <div class="carousel-item">
+                <img src="posters/car2_4.jpg"  class="d-block w-100">
+              </div>
+
+              <div class="carousel-item">
+                <img src="posters/car2_1.jpg"  class="d-block w-100">
+              </div>
+
+              <div class="carousel-item">
+                <img src="posters/car2_5.jpg"  class="d-block w-100">
+              </div>
+
+            </div>
+            
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <hr>
+
+          <h6>This is a very old car, it was manufactured in 2004. It has a amazing 5.5 bi-turbo v12 engine, which allow this 2-ton heavy car accelerate to 100km/h within 4.4 seconds.  </h6>
+          <h6>At the beginning, it has a lot of problems with the circuits and engine parts due to the heat of it's v12 engine. I fully rebuilt the engine and most of the circults and made it fresh as new. it's interior is in a oldschool vibe but still very comfortable.</h6>
+          <h6>Unlike the Maserati, this car is quiet while driving, but it actually has more horsepower than the Maserati, and it feels like I'm sitting on a sofa while driving it, and the suspension is so soft that it feels like I'm driving a boat.</h6>
+          <h6>Except some potential issues that could happen due to the age of this car and the heat that the engine creates, this car is a perfect combination of comfortbility and horsepower. </h6>
+
+        </div>
+
+        <div style="height:150px">
+        </div>
+
+       
+        
+
+
+    </div>
+
+</body>

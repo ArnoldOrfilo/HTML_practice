@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Created by Wenyi Chen,student number:P349400-->
+
+<head>
+    <title>
+        Wenyi Chen | Movies <!--title shows on the browser-->
+    </title>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script><!--access to bootstrap files-->
+
+</head>
+
+<!--Comment of style is in the report!-->
+<style>
+
+    
+    
+    body{
+        
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        background-image: url('files/IMG_2730.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+        
+    }
+
+    hr{
+        background-color:rgb(104, 103, 103); width:980px; height:0.2px; margin-left: auto;margin-right: auto;margin-top: 50;
+    }
+
+    .animated {
+        animation-duration: 2s;
+        animation-name: fadeIn;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+    img {
+    
+    opacity: 1;
+    transition: opacity 0.5s;
+    }
+
+    img:hover {
+      opacity: 0.6;
+    }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    .navDiv{
+
+      position:fixed;
+      z-index: 9999;
+      width: 280px;
+      height:50px;
+      background-color: darkgray;
+      color: white;
+      box-shadow: 2px 5px 15px black;
+      opacity: 0.5;
+      transition: opacity 0.5s;
+      border-radius: 10px;
+    }
+
+    .navDiv:hover{
+      opacity:1;
+    }
+
+    nav{
+      line-height: 20px;
+    }
+    
+    nav ul{
+      list-style: none;
+      
+    }
+
+    .navli{
+      width:105px;
+      float:left;
+      text-align: center;
+    }
+
+</style>
+<!--Comment of style is in the report!-->
+
+<body class="animated"><!--To let the content inside body tag have fade in animation-->
+    <div style="width:980px;margin-left:auto;margin-right:auto;height:auto"><!--as all other pages, I put everything in this div with a width of 980px because I don't want the content be full screen-->
+        
+
+        
+        <div style="float:left; width:125px; margin-left: 0; margin-right: auto;margin-top: auto; ">
+            <a href="main.html"><img src="files/smileyFace.png" atl="smiley face" style="width:125px; height:125px"></a>
+        </div>
+
+        <div class="navDiv" style="float:left;margin-top: 40px; margin-left:355px;"><!--This is the navi bar. I putted it inside a div with specific class so that I can define animation and other changes on it.-->
+      
+          
+          <nav>
+            <ul>
+              <a href="cars.html"><li class="navli"><h6 > CARS</h6> </li></a>
+              
+              <a href="movie.html"><li class="navli"><h6> MOVIES</h6> </li></a>
+            </ul>
+          </nav>
+
+        </div>
+
+        <hr>
+        <div style="width:980px;margin-left:auto;margin-right:auto;height: 480px;">
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel" ><!--a bootstrap carousel-->
+
+           
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+              <!--add a line if you want to add one more picture. but the data-bs-slide-to attribute should plus one as you do it.-->
+              <!--index should start from 0-->
+            </div>
+            
+            
+            <div class="carousel-inner">
+  
+              <div class="carousel-item active">
+                <a href="Tenet.html"><img src="posters/tenet_poster.jpg" alt="tenet" class="d-block w-100"></a>
+  
+              </div>
+  
+  
+              <div class="carousel-item">
+                <a href="Notorious.html"><img src="posters/notorious_poster.jpg" alt="notorious" class="d-block w-100"></a>
+              </div>
+
+
+              <div class="carousel-item">
+                <a href="inception.html"><img src="posters/inception_poster.jpg" alt="Inception" class="d-block w-100"></a>
+              </div>
+
+              <div class="carousel-item">
+                <a href="SOC.html"><img src="posters/straight_outta_compton_poster.jpg" alt="Straight outta compton movie" class="d-block w-100"></a>
+              </div>
+
+
+              <div class="carousel-item">
+  
+                <a href="godfather.html"><img src="posters/Godfather_poster.jpg"  alt="Godfather movie"class="d-block w-100"></a>
+  
+              </div>
+
+              <div class="carousel-item">
+                <a href="NFS.html"><img src="posters/need_for_speed_poster.jpg" alt="Need for speed movie" class="d-block w-100">
+              </div>
+            
+
+            <div class="carousel-item">
+              <a href="limitless.html"><img src="posters/limitless_poster.jpg" alt="limitless movie" class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+              <a href="TWOW.html"><img src="posters/TWOW_poster.jpg" alt="The wolf of wallstreet movie" class="d-block w-100">
+            </div>
+          </div>
+            
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+            <!--These two button is for switching pictures, one is on the left one is on the right-->
+          </div>
+        
+        </div>
+  
+        
+    </div>
+
+    
+    
+    <div style="width:980px;margin-left:auto;margin-right:auto;height:auto;font-size: x-small;line-height: normal;"><!--The reason why I put one more div here is because I have to restrict the width and pattern of these pictures below-->
+
+        <div style="float:left; margin-top:200px;margin-left:0px; width:200px;">
+            
+            <a href="Tenet.html" ><img src="files/tenet.jpg " style="width:200px;height:288px;" > </a>      
+            <h6 style="font-weight:lighter">Tenet<br>2020</h6>
+            
+
+        </div>
+        
+        <div style="float:left; margin-top:200px; margin-left:60px; width:200px;">
+            
+            <a href="Notorious.html" ><img src="files/notorious.jpg" style="width:200px;height:288px;" > </a>    
+            <h6 style="font-weight:lighter">Notorious<br>2009</h6>
+            
+
+        </div>
+
+        <div style="float:left; margin-top:200px; margin-left:60px; width:200px;">
+            
+            <a href="inception.html" ><img src="files/inception.jpg" style="width:200px;height:288px;" > </a>      
+            <h6 style="font-weight:lighter">Inception<br>2010</h6>
+            
+
+        </div>
+
+        <div style="float:left; margin-top:200px; margin-left:60px; width:200px;">
+            
+            <a href="SOC.html" ><img src="files/straight_outta_compton.jpg" style="width:200px;height:288px;" ></a>       
+            <h6 style="font-weight:lighter">Straight Outta Compton<br>2015</h6>
+            
+
+        </div>
+
+        <div style="float:left; margin-top:30px; margin-left:0px; width:200px;">
+            
+            <a href="godfather.html" ><img src="files/godfather.jpg " style="width:200px;height:288px;" ></a>       
+            <h6 style="font-weight:lighter">The Godfather(1-3)<br>1972,1974,1990</h6>
+            
+
+        </div>
+
+        <div style="float:left; margin-top:30px; margin-left:60px; width:200px;">
+            
+            <a href="NFS.html" ><img src="files/need_for_speed.jpg " style="width:200px;height:288px;" ></a>
+            <h6 style="font-weight:lighter">Need For Speed<br>2014</h6>
+            
+
+        </div>
+
+        <div style="float:left; margin-top:30px; margin-left:60px; width:200px;">
+            
+            <a href="limitless.html" ><img src="files/limitless.jpg " style="width:200px;height:288px;" ></a>       
+            <h6 style="font-weight:lighter">Limitless<br>2011</h6>
+           
+
+        </div>
+        
+        <div style="float:left; margin-top:30px; margin-left:60px; width:200px;">
+            
+            <a href="TWOW.html" ><img src="files/the_wolf_of_wall_street.jpg " style="width:200px;height:288px;" ></a>       
+            <h6 style="font-weight:lighter">The Wolf Of Wall Street<br>2013</h6>
+            
+
+        </div>
+    
+        
+        </div>
+        <hr>
+        <div style="height:300px"><!--like other pages, this is just for better appearence that having some space after all contents-->
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
